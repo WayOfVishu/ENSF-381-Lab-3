@@ -1,0 +1,68 @@
+/* Remove default browser padding and margin */
+body {
+	margin: 0;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	color: #3d3d3d;
+	font-size: 16px;
+}
+
+/* Styling table 2 for vertical spacing */
+.table2 tr {
+	height: 20px;
+}
+
+.table2-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+}
+
+/* Standardizing the image width and display */
+.td_image_width {
+	width: 570px;
+}
+
+.img_standard {
+	width: 570px;
+	height: 400px;
+	display: block;
+}
+
+/* Background colors for event description boxes */
+.box1 {
+	background-color: #B22222;
+	text-align: center;
+}
+
+.box2 {
+	background-color: #E73E6B;
+	text-align: center;
+}
+
+.box3 {
+	background-color: #5A2D0C;
+	text-align: center;
+}
+
+/* Text styling inside boxes */
+.box_text_color {
+	color: white;
+	padding: 10px;
+	margin: 0;
+}
+
+/* Styling the Read More buttons */
+a.read-more {
+	color: white;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	transition: color 0.3s ease;
+}
+
+a.read-more:hover::after {
+	content: " →";
+}
