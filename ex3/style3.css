@@ -1,0 +1,91 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around; /* This ensures even spacing between items */
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    color: white; /* Sets link color to white */
+    text-decoration: none;
+    padding: 10px 20px; /* Adds padding to increase space around links */
+    display: block;
+    font-size: 16px;
+}
+
+/* Dropdown Menu */
+.nav-item:hover > .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown li {
+    padding: 8px 20px;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #bdbbbb;
+}
+
+/* Hover Effects */
+.nav-item a:hover {
+    background-color: #bdbbbb;
+}
+
+/* Content Section */
+.Container {
+    display: flex;
+    justify-content: space-around; /* This ensures even spacing between items */
+    margin-top: 20px;
+}
+
+.item {
+    flex: 1 1 18%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 5px;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
